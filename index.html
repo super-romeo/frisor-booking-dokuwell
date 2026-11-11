@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Til små frisørsaloner i Danmark: kunderne booker selv en tid i kalenderen hos den frisør, de vælger, og får en SMS-påmindelse dagen før.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Klippetid</a></div>
-  <nav class="top"><a href="#hvad" data-ev="click_nav_hvad">Det får du</a><a href="price.html" data-ev="click_nav_pris">Pris</a><a href="#eksempel" data-ev="click_nav_eksempel">Eksempel</a><a href="#start" data-ev="click_nav_start">Kom i gang</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Klippetid</a>
+  <nav><a href="#hvad" data-ev="click_nav_hvad">Det får du</a><a href="price.html" data-ev="click_nav_pris">Pris</a><a href="#eksempel" data-ev="click_nav_eksempel">Eksempel</a><a href="#start" data-ev="click_nav_start">Kom i gang</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Online booking til frisørsalonen — kunderne booker selv og husker deres tid</h1>
-    <p class="sub">Til saloner med én eller få frisører: du sætter behandlinger, varighed og åbningstider op, kunderne vælger en ledig tid via dit link, og dagen før får de en SMS-påmindelse.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Det har jeg brug for</a>
-    <p class="cta-note">Tidlig adgang · Der modtages endnu ingen betaling på denne side</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Til saloner med én eller få frisører</p>
+      <h1 class="rise" style="--i:1" data-len="long">Online booking til frisørsalonen&nbsp;<span class="soft">— kunderne booker selv og husker deres tid</span></h1>
+      <p class="rise" style="--i:2">Til saloner med én eller få frisører: du sætter behandlinger, varighed og åbningstider op, kunderne vælger en ledig tid via dit link, og dagen før får de en SMS-påmindelse.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Det har jeg brug for</a>
+      <p class="meta rise" style="--i:4">Tidlig adgang · Der modtages endnu ingen betaling på denne side</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="165" font-size="40" font-weight="600" fill="#0a1524">Klippetid</text><line x1="120" y1="205" x2="1080" y2="205" stroke="#dde2ea" stroke-width="3" /><rect x="120" y="250" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="196" y="284" font-size="32" font-weight="600" fill="#0a1524">Online booking</text><rect x="120" y="360" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="196" y="394" font-size="32" font-weight="600" fill="#0a1524">SMS-påmindelse</text><rect x="120" y="470" width="48" height="48" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><text x="196" y="504" font-size="32" font-weight="600" fill="#0a1524">kalenderen</text><rect x="720" y="250" width="360" height="410" rx="20" fill="#dfe8f7" /><text x="748" y="310" font-size="32" font-weight="600" fill="#0a1524">Klippetid</text><rect x="748" y="470" width="52" height="150" rx="8" fill="#ffffff" stroke="#b9c3d2" stroke-width="2" /><rect x="826" y="410" width="52" height="210" rx="8" fill="#12397a" /><rect x="904" y="510" width="52" height="110" rx="8" fill="#ffffff" stroke="#b9c3d2" stroke-width="2" /><rect x="982" y="440" width="52" height="180" rx="8" fill="#ffffff" stroke="#b9c3d2" stroke-width="2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Til</dt><dd>Små frisørsaloner</dd></div>
+      <div><dt>Booking</dt><dd>Kunderne booker selv</dd></div>
+      <div><dt>Link</dt><dd>Via dit bookinglink</dd></div>
+      <div><dt>Adgang</dt><dd>Tidlig adgang</dd></div>
+    </dl>
+  </section>
 
   <section id="hvad" data-view="features_view">
-    <h2>Det får du</h2>
-    <div class="grid">
-      <div class="card"><b>Online booking</b><span>Kunden vælger behandling, frisør og ledig tid.</span><br><a class="btn" href="price.html" data-ev="feature_booking">Det har jeg brug for</a></div>
-      <div class="card"><b>SMS-påmindelser</b><span>Dagen før besøget, med mulighed for at aflyse.</span><br><a class="btn" href="price.html" data-ev="feature_sms">Det har jeg brug for</a></div>
-      <div class="card"><b>Kalender pr. frisør</b><span>Hver medarbejder har sin egen kalender.</span><br><a class="btn" href="price.html" data-ev="feature_kalender">Det har jeg brug for</a></div>
-      <div class="card"><b>Kundekort</b><span>Tidligere besøg og noter om farve og klipning.</span><br><a class="btn" href="price.html" data-ev="feature_kunder">Det har jeg brug for</a></div>
+    <div class="stack"><h2>Det får du</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="120" font-size="32" font-weight="600" fill="#0a1524">Online booking</text><rect x="250" y="160" width="300" height="360" rx="36" fill="#ffffff" stroke="#0a1524" stroke-width="4" /><rect x="274" y="210" width="252" height="70" rx="14" fill="#dfe8f7" /><rect x="274" y="300" width="180" height="48" rx="14" fill="#12397a" /><circle cx="400" cy="470" r="16" fill="#dde2ea" /></svg></div>
+        <h3>Online booking</h3><p>Kunden vælger behandling, frisør og ledig tid.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_booking">Det har jeg brug for</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="60" y="48" width="680" height="504" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="100" y="120" font-size="32" font-weight="600" fill="#0a1524">SMS-påmindelser</text><rect x="100" y="180" width="200" height="300" rx="14" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="500" y="180" width="200" height="300" rx="14" fill="#dfe8f7" stroke="#dde2ea" stroke-width="3" /><path d="M320 330 H470" fill="none" stroke="#12397a" stroke-width="6" /><polygon points="470,316 498,330 470,344" fill="#12397a" /><rect x="124" y="220" width="150" height="20" rx="6" fill="#dde2ea" /><rect x="124" y="260" width="110" height="20" rx="6" fill="#b9c3d2" /><rect x="124" y="300" width="140" height="20" rx="6" fill="#dde2ea" /><rect x="524" y="220" width="150" height="20" rx="6" fill="#ffffff" /><rect x="524" y="260" width="90" height="20" rx="6" fill="#b9c3d2" /></svg></div>
+        <h3>SMS-påmindelser</h3><p>Dagen før besøget, med mulighed for at aflyse.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_sms">Det har jeg brug for</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="130" font-size="36" font-weight="600" fill="#0a1524">egen kalender</text><rect x="130" y="200" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="270" y="200" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="410" y="200" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="550" y="200" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="130" y="300" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="270" y="300" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="410" y="300" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="550" y="300" width="110" height="72" rx="10" fill="#12397a" /><rect x="130" y="400" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="270" y="400" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="410" y="400" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="550" y="400" width="110" height="72" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /></svg></div>
+        <h3>Kalender pr. frisør</h3><p>Hver medarbejder har sin egen kalender.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_kalender">Det har jeg brug for</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="50" width="660" height="500" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="130" font-size="36" font-weight="600" fill="#0a1524">Kundekort</text><rect x="140" y="200" width="240" height="26" rx="8" fill="#dde2ea" /><rect x="140" y="270" width="400" height="26" rx="8" fill="#b9c3d2" /><rect x="140" y="340" width="180" height="26" rx="8" fill="#dde2ea" /><rect x="140" y="410" width="320" height="26" rx="8" fill="#dfe8f7" /><circle cx="600" cy="430" r="46" fill="#dfe8f7" /><polyline points="576,430 594,450 628,408" fill="none" stroke="#12397a" stroke-width="8" stroke-linecap="round" /></svg></div>
+        <h3>Kundekort</h3><p>Tidligere besøg og noter om farve og klipning.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_kunder">Det har jeg brug for</a>
+      </article>
     </div>
   </section>
 
-  <section id="eksempel" data-view="example_view">
-    <h2>Eksempel (opdigtede data)</h2>
-    <p class="fine">En frisørsalon i Odense med to stole og en elev. Før ringede kunderne midt i en klipning, og omtrent hver uge kom en kunde ikke. Nu ligger et bookinglink på salonens Instagram, kunden vælger selv behandling og tid, og dagen før kommer en SMS. Indehaveren ser hele ugen i én kalender og behøver ikke tage telefonen med saksen i hånden.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Se prisen</a>
+  <section id="eksempel" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Eksempel</h2>
+      <p>En frisørsalon i Odense med to stole og en elev. Før ringede kunderne midt i en klipning, og omtrent hver uge kom en kunde ikke. Nu ligger et bookinglink på salonens Instagram, kunden vælger selv behandling og tid, og dagen før kommer en SMS. Indehaveren ser hele ugen i én kalender og behøver ikke tage telefonen med saksen i hånden.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Se prisen</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="160" x2="1000" y2="160" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="240" font-size="30" font-weight="600" fill="#0a1524" text-anchor="middle">Odense</text><circle cx="600" cy="160" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="240" font-size="30" font-weight="600" fill="#0a1524" text-anchor="middle">bookinglink</text><circle cx="960" cy="160" r="22" fill="#12397a" /><text x="960" y="240" font-size="30" font-weight="600" fill="#0a1524" text-anchor="middle">Instagram</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="380" font-size="36" font-weight="600" fill="#0a1524">en SMS</text><rect x="170" y="440" width="200" height="28" rx="8" fill="#dde2ea" /><rect x="170" y="510" width="340" height="28" rx="8" fill="#dfe8f7" /><rect x="170" y="580" width="150" height="28" rx="8" fill="#b9c3d2" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Sådan virker det</h2>
-    <p>I en lille frisørsalon aftales tider ofte i telefonen eller over beskeder, og netop når frisøren er i gang med en kunde. Kalenderen ligger i en bog eller på mobilen, kunder glemmer deres tid, og den tomme time bliver ikke fyldt igen.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Sådan virker det</h2></div>
+    <div class="stack">
+      <p>I en lille frisørsalon aftales tider ofte i telefonen eller over beskeder, og netop når frisøren er i gang med en kunde. Kalenderen ligger i en bog eller på mobilen, kunder glemmer deres tid, og den tomme time bliver ikke fyldt igen.</p>
     <p>Klippetid overtager det arbejde. Svar på de typiske spørgsmål finder du under <a href="#faq" data-ev="click_opis_faq">spørgsmål og svar</a>, og du kan vise din interesse <a href="#start" data-ev="click_opis_start">nederst på siden</a>.</p>
     <p>Først sætter du de behandlinger op, du tilbyder, deres varighed og pauserne imellem, dine medarbejdere og åbningstiderne. Hver frisør får sin egen kalender, så to kunder ikke bliver booket til den samme stol på samme tid.</p>
     <p>Kunderne får et bookinglink, som du sætter på hjemmesiden, i din profil på sociale medier eller i en besked. De vælger behandling, frisør og en ledig tid, skriver navn og telefonnummer, og bookingen står straks i din kalender. Du skal ikke skrive noget af eller bekræfte i hånden.</p>
@@ -117,31 +151,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Faste kunder kan booke næste tid, allerede når de går. Klippetid sender også en påmindelse om den tid, så kalenderen er fyldt flere uger frem.</p>
     <p>For at komme i gang er det nok at sætte én frisør og nogle få behandlinger op.</p>
     <p>Klippetid styrer bookinger og påmindelser; salonen står selv for behandlinger og priser.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Spørgsmål og svar</h2>
-    <h3>Hvordan booker kunderne?</h3>
-    <p>Via dit bookinglink: de vælger behandling, frisør og ledig tid, og bookingen står straks i kalenderen.</p>
-    <h3>Hvornår kommer SMS-påmindelsen?</h3>
-    <p>Dagen før besøget, med tid, adresse og et link til at aflyse.</p>
-    <h3>Kan hver frisør have sin egen kalender?</h3>
-    <p>Ja, hver medarbejder har sin egen kalender og sine egne tider.</p>
-    <h3>Kan jeg også skrive tider ind fra telefonen?</h3>
-    <p>Ja, i den samme kalender, så alle tider står ét sted.</p>
-    <h3>Kan jeg bruge Klippetid allerede nu?</h3>
-    <p>Ikke endnu. Tjenesten er under forberedelse, og vi undersøger, om små frisørsaloner har brug for den.</p>
+    <div class="stack"><h2>Spørgsmål og svar</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Hvordan booker kunderne?</h3><p>Via dit bookinglink: de vælger behandling, frisør og ledig tid, og bookingen står straks i kalenderen.</p></div>
+      <div class="split flip"><h3>Hvornår kommer SMS-påmindelsen?</h3><p>Dagen før besøget, med tid, adresse og et link til at aflyse.</p></div>
+      <div class="split flip"><h3>Kan hver frisør have sin egen kalender?</h3><p>Ja, hver medarbejder har sin egen kalender og sine egne tider.</p></div>
+      <div class="split flip"><h3>Kan jeg også skrive tider ind fra telefonen?</h3><p>Ja, i den samme kalender, så alle tider står ét sted.</p></div>
+      <div class="split flip"><h3>Kan jeg bruge Klippetid allerede nu?</h3><p>Ikke endnu. Tjenesten er under forberedelse, og vi undersøger, om små frisørsaloner har brug for den.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Giv os besked</h2>
-    <p><label>Hvor mange frisører er I i salonen<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— vælg —</option><option>1</option><option>2–3</option><option>4–5</option><option>Flere end 5</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Kom i gang</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Giv os besked</h2>
+    </div>
+    <div class="tile stack">
+      <label>Hvor mange frisører er I i salonen<select data-ev-focus="form_start"><option value="">— vælg —</option><option>1</option><option>2–3</option><option>4–5</option><option>Flere end 5</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Kom i gang</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Klippetid</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privatlivspolitik</a></p>
-  <p class="muted">Klippetid styrer bookinger og påmindelser; salonen står selv for behandlinger og priser.</p>
+  <p>Klippetid styrer bookinger og påmindelser; salonen står selv for behandlinger og priser.</p>
 </div></footer>
 
 </body>
